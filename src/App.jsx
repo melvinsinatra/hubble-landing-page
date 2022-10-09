@@ -1,6 +1,6 @@
 import { Container } from './components/styles/Container.styled';
 import { ThemeProvider } from 'styled-components';
-import { Header, Card } from './components';
+import { Header, Card, Footer } from './components';
 import GlobalStyles from './components/styles/Global';
 import { content } from './constants';
 
@@ -30,6 +30,7 @@ function App() {
 				<h1>Hello world</h1>
 				{contentCardEls}
 			</Container>
+			<Footer/>
 		</ThemeProvider>
 	);
 }
