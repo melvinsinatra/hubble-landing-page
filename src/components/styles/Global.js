@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
-  },
+  }
 
   body {
     background: ${({theme}) => theme.colors.body};
@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
-  },
+  }
 
   p {
     opacity: 0.6;
@@ -22,5 +22,3 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
 `
-
-export default GlobalStyles

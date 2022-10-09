@@ -1,8 +1,8 @@
 import { Container } from './components/styles/Container.styled';
 import { ThemeProvider } from 'styled-components';
 import { Header, Card, Footer } from './components';
-import GlobalStyles from './components/styles/Global';
 import { content } from './constants';
+import { GlobalStyles } from './components/styles/Global';
 
 const theme = {
 	colors: {
@@ -24,13 +24,14 @@ function App() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<GlobalStyles />
-			<Header />
-			<Container>
-				<h1>Hello world</h1>
-				{contentCardEls}
-			</Container>
-			<Footer />
+			<>
+				<GlobalStyles />
+				<Header />
+				<Container>
+					{contentCardEls}
+				</Container>
+				<Footer />
+			</>
 		</ThemeProvider>
 	);
 }
