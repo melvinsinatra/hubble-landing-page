@@ -1,7 +1,8 @@
 import { Container } from './components/styles/Container.styled';
 import { ThemeProvider } from 'styled-components';
-import Header from './components/Header';
+import { Header, Card } from './components';
 import GlobalStyles from './components/styles/Global';
+import { content } from './constants';
 
 const theme = {
 	colors: {
@@ -10,17 +11,24 @@ const theme = {
 		footer: '#003333'
 	},
 	breakpoints: {
-		mobile: '768px',
+		mobile: '768px'
 	}
 };
 
 function App() {
+	const contentCardEls = content.map((item, index) => (
+		<Card
+			key={index}
+			item={item}/>
+	));
+
 	return (
 		<ThemeProvider theme={theme}>
-      <GlobalStyles/>
+			<GlobalStyles />
 			<Header />
 			<Container>
 				<h1>Hello world</h1>
+				{contentCardEls}
 			</Container>
 		</ThemeProvider>
 	);
