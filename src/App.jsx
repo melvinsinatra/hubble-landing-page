@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import { Container } from './components/styles/Container.styled';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
