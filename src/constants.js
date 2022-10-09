@@ -1,4 +1,4 @@
-const content = [
+export const content = [
   {
     id: 1,
     title: 'Grow Together',
@@ -18,5 +18,3 @@ const content = [
     image: 'illustration-your-users.svg',
   },
 ]
-
-export default content
