@@ -30,7 +30,7 @@ function App() {
 				<h1>Hello world</h1>
 				{contentCardEls}
 			</Container>
-			<Footer/>
+			<Footer />
 		</ThemeProvider>
 	);
 }
