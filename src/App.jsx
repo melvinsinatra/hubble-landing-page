@@ -8,6 +8,9 @@ const theme = {
 		header: '#ebfbff',
 		body: '#fff',
 		footer: '#003333'
+	},
+	breakpoints: {
+		mobile: '768px',
 	}
 };
 
