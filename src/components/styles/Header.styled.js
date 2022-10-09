@@ -10,10 +10,16 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.5em;
+
+  @media(max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `
 
 export const Logo = styled.img`
-  
+@media(max-width: ${({theme}) => theme.breakpoints.mobile}) {
+  margin-bottom: 2.5em;
+}
 `
 
 export const Image = styled.img`
