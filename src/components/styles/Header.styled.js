@@ -15,3 +15,9 @@ export const Nav = styled.nav`
 export const Logo = styled.img`
   
 `
+
+export const Image = styled.img`
+  width: 100%;
+  max-width: 375px;
+  margin-left: 2.5em;
+`
