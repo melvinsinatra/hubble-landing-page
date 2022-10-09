@@ -28,6 +28,6 @@ export const Image = styled.img`
 	margin-left: 2.5em;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-		margin" 2.5em 0 1.875em;
+		margin: 2.5em 0 1.875em;
 	}
 `;
